@@ -181,12 +181,9 @@ footer {
   text-align: center;
 }
 
-.map {
-  margin-bottom: .8rem;
-}
-
 .map-text {
   font-size: 1.2rem;
+  margin-top: .8rem;
 }
 
 @media only screen and (max-width: 1320px) {
