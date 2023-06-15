@@ -22,38 +22,17 @@
   </head>
   <body>
     <header>
-      <div class="logo">Upfront Solutions</div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
+      <img class="logo" src="/assets/logo.png" alt="site logo" />
+      <nav>
+        <ul class="nav-items">
+          <li class="item"><a class="nav-link" href="#">Home</a></li>
+          <li class="item"><a class="nav-link" href="#">Vacancies</a></li>
+          <li class="item"><a class="nav-link" href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="banner">
-      <div class="jobsearch-container">
-        <h2 id="details-text">Looking for work? Enter your details below</h2>
-        <form class="details-form" action="submit">
-          <label for="name" class="name-label">Name</label>
-          <input type="text" name="name" id="name" required />
-          <label for="email" class="email-label">Email/Phone No.</label>
-          <input type="email" name="email" id="email" required />
-          <label for="location" class="location-label">Location</label>
-          <input type="text" name="location" id="location" required />
-          <button id="submit-btn">Submit Details</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="info">
+    <section id="home">
       <div class="info-container">
         <h1 class="info-title">
           Recruitment agency specialising in exceptional staff
@@ -76,6 +55,22 @@
           recruitment in London and beyond. This is what makes us one of the
           market-leading permanent and temp recruitment agencies in London.
         </p>
+      </div>
+      <picture><img src="/assets/banner2.jpg" alt="banner image" /></picture>
+    </section>
+
+    <section id="jobsearch">
+      <div class="jobsearch-container">
+        <h2 id="details-text">Looking for work? Enter your details below</h2>
+        <form class="details-form" action="submit">
+          <label for="name" class="name-label">Name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email" class="email-label">Email/Phone No.</label>
+          <input type="email" name="email" id="email" required />
+          <label for="location" class="location-label">Location</label>
+          <input type="text" name="location" id="location" required />
+          <button id="submit-btn">Submit Details</button>
+        </form>
       </div>
     </section>
 
@@ -103,13 +98,11 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-          <h3 class="map-text">
-            Located in Central London, operating across England
-          </h3>
         </div>
       </div>
+      <h3 class="map-text">
+        Located in Central London, operating across England
+      </h3>
     </footer>
-
-    <script src="main.js"></script>
   </body>
 </html>
