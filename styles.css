@@ -88,9 +88,9 @@ hr {
 }
 
 #home img {
-  width: clamp(300px, 75%, 700px);
-  height: auto;
-  padding: 0 1rem;
+  width: clamp(200px, 90%, 1100px);
+  height: 400px;
+  margin: 0 auto;
 }
 
 #jobsearch {
@@ -201,7 +201,7 @@ footer {
   }
 
   .nav-link {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .info-container {
