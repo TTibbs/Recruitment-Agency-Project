@@ -238,18 +238,3 @@ footer {
     font-size: 1.25em;
   }
 }
-
-/*  CSS styles for smaller devices */
-@media only screen and (max-width: 460px) {
-  header {
-    padding: .4rem;
-  }
-
-  .logo {
-    width: 80px;
-  }
-
-  .nav-link {
-    font-size: .8em;
-  }
-}
