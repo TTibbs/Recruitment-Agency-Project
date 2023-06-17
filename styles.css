@@ -88,7 +88,7 @@ hr {
 }
 
 #home img {
-  max-width: 100%;
+  width: clamp(300px, 75%, 700px);
   height: auto;
   padding: 0 1rem;
 }
