@@ -36,12 +36,8 @@ header {
   justify-content: center;
 }
 
-.item {
-  margin: 0 15px;
-}
-
 .nav-link {
-  padding: 8px;
+  padding: 8px 12px;
   border: none;
   border-radius: 8px;
   text-decoration: none;
