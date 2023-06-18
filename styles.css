@@ -86,7 +86,7 @@ hr {
 
 #home img {
   width: clamp(200px, 90%, 1100px);
-  height: 400px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -223,16 +223,5 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     padding: 1rem 2.5rem;
-  }
-}
-
-/* CSS styles for laptop devices */
-@media only screen and (min-width: 1024px) {
-  header {
-    padding: 1rem 3rem;
-  }
-
-  .nav-link {
-    font-size: 1.25em;
   }
 }
