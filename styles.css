@@ -27,6 +27,7 @@ header {
 
 .logo {
   width: 150px;
+  height: 125px;
 }
 
 .nav-items {
@@ -167,6 +168,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style-type: none;
 }
 
 .fa-brands {

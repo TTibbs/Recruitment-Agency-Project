@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text: #0058e6;
+  --secondary-text: #b9b9b9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+  color: #b9b9b9;
+}
+
+#job-listings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listings-title {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.listings-details {
+  padding-bottom: 1rem;
+}
+
+.listings-title,
+.listings-details {
+  text-align: center;
+}
+
+#listings-grid {
+  padding: 1rem 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.map-text {
+  text-align: center;
+}
+
+/* CSS styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem .5rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-link {
+    font-size: .6em;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* CSS styles for mobile devices */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1rem .5rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-link {
+    font-size: .6em;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

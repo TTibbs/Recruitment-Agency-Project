@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruitment Agency</title>
+    <link rel="stylesheet" href="vacancies.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/assets/logo.png" alt="site logo" />
+      <nav>
+        <ul class="nav-items">
+          <li class="item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="item"><a class="nav-link" href="#">Vacancies</a></li>
+          <li class="item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="job-listings">
+      <div class="listings-container">
+        <h1 class="listings-title">Vacancies</h1>
+        <p class="listings-details">
+          Below you can find a list of the companies we provide employment with
+          for our candidates.
+        </p>
+      </div>
+    </section>
+
+    <section id="listings-grid">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,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"
+            alt="Image 1"
+            class="grid-img"
+          />
+          <h3>Lime</h3>
+          <p>
+            This role is warehouse based as a mechanic fixing either e-bikes or
+            e-scooters, training to be provided. The wage is £12.85 though there
+            is a bonus for full attendance. If you are interested in this role
+            please contact Zion on 07123456789.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOUAAAB4CAMAAAA678W5AAAApVBMVEX///8AAAD8/Pzk5OSpqakWFhZGRkbW1tby8vL/lwDIyMjq6uo7Ozv/lAB4eHgwMDCEhIS/v78nJyebm5seHh5oaGiLi4ujo6Ozs7MKCgp+fn7//Pje3t5iYmLOzs6SkpL/iwD/8OH/y5X/5cpVVVX/2bH/3rpwcHD/umz/tGf/wHv/uGT/zqT/woj/7tn/mhn/pTP/qlH/q0H/sE7/1qf/uXn/oiLwSAQIAAAEGElEQVR4nO2X7XqaQBBGYQFBEEFF5Sui4ndbtan1/i+tM7ugbZqk+ZFE7POeHy4LC88ehp0dNQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvBeGWYQj05DHjm3bQsvHgx733PHYrkfl41FYxJ48FnZNLmTfHQ9ioxpn254m4sHY+FyL13HCRGeskCdsJpbumhb1H4RY8PlUjjIeLDUq5t5Atyoidpm0+BFRyg/wWkny4PGdkXk7qac4Q71mRF2T2rDqdlU7oNNecBnFQS4uvYQs3bozdOh1dOgFrVV/cmO3KzFPNRzQ3PSOpyxV1HRLxVhf0NxZvF8USaXCo/SIfwKPoseDwki9ELbsV9bFreUu0LeVuBQsUovcav6hPZKzHLsclJahGSxCdhPlRV+A4wg5NObPl6JHevSEviEt9U7sttTZhhAX4YDmr9GsrJ6y7FA64UmGZKMsnbjo8irzKEp9lYC0nHW6QnMeqKX3I9ZSWlqSe089qEmIfNK5Wq7pRLdagcqSh5ByHkdXS7lqeSEGqpWLtSstExpi0wsJbmf0FGGvqwVYW4aVJQeotnR6dZaqLMe6GiG/YmnJZwJpadErsYMmWToqX/aTVy09lTWDi2UuszBvHW5tybcmDbXk3JGYntN6zVJ2A9ez63UpF2OH3a6xlOm5mZasYfGH96plHS+jXpcyB6viJo8qS35frWZa2vXCoyglL1ryklto6juNvCp+wWDc8zS1XVIdKEZyh2ykJUepk6vEz5v685YqTFXNM1H7DJMEoSO4YqCyyenIa420NFQV0JMVXGC/YBnLGiGXdYDeEk5d3MitccK1UmzzHWunmZaarNP6lyk/b2n3fx+Ve/IokpWgqco/We9ZE62hlq6qWltGqlumeM6yQ8t2rLbUbr6gVKt5ndbAdoRj9B6SuKp6WJSrc1kkCFUV9G8td8UOh8O16dA/MK51Jmna5TZO05CT0ihNZQHYS4fDlOKWd/kP50TUd+d8UfTWi8WwkDnXKdKU/9x41A5uoPMSgipv2aqeqFvtz/aPUVo532y3u+XlGZ7n1IdP72wa+y+ztw1ctqftdtv3p/uPndCHkH31v5VvGndaleXqW/suLTXt5B92b575rD3NPnIyH8dsO50el7N/zD7bz/3v2X76+DmTen+y+WHqn3+e9i+KZuV8254eS20+PX3mzN6X/Rff99uHH7vV3yHNZqfN44Eu7+jS8fjGZNVMys3B5xTqHx538yUlGma1nG+OfNL3z3LtlvccSiYrdxwwuVvIRh35sjnPVR7+ubvT3PMb2enHuV0bXkQP582qdivvX5LJVvPN9+OhCujhcbv5+p+YPSGbzfbliin3s+y/VAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMC98wvXkUJQhq4SxgAAAABJRU5ErkJggg=="
+            alt="Image 2"
+            class="grid-img"
+          />
+          <h3>Amazon</h3>
+          <p>
+            This role is warehouse based with day shifts and night shifts
+            available, you will be dealing with handheld scanners sorting
+            parcels or part of the warehouse team. PPE and training to be
+            provided, multiple locations across South England is available. If
+            you are interested in this role please contact Terry on 07123456789.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,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"
+            alt="Image 3"
+            class="grid-img"
+          />
+          <h3>DPD</h3>
+          <p>
+            This role is warehouse based with day shifts and night shifts
+            available, you will be dealing with handheld scanners sorting
+            parcels from a conveyor belt, assisting drivers or part of the
+            warehouse team. PPE and training to be provided, multiple locations
+            across South England is available. If you are interested in this
+            role please contact Terry on 07123456789.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,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"
+            alt="Image 3"
+            class="grid-img"
+          />
+          <h3>CostCo</h3>
+          <p>
+            This role is warehouse based with day shifts and night shifts
+            available, you will be filling shelves or helping customers,
+            assisting drivers or part of the warehouse team. PPE and training to
+            be provided, multiple locations across South England is available.
+            If you are interested in this role please contact Zion on
+            07123456789.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAtFBMVEX////MITEoU5zDy973+PsANZAAQ5XHAADKDiTce4H35ebMHC3KABzqtrnMHi/adXvPMz/JABT++vrloaXIAA767u8aTJkAMY7uxMbvyszz2NnhlJj23+Hmp6ru8Pbh5e7UWWLfio/QQUzNKzjTU1vWZWzdg4bPPUPnrq/STlTYbnXim5zMLDKHmcAAH4mapsgAE4aBkLsACYSns89lfLA6XqHT2ee3wNdKaqcAK4wAPZNziLfJCcWsAAAEVUlEQVRoge2WbXviKBSGg7WCATREtHnRmhcT39rtzs60ne3+//+1HIgaYtpp59Nee3F/0TyB83DgQPA8h8PhcDgcDofD4XA4HA6Hw+FwAPMkjqI48bt66CeRfhHazefzdwLF03EPdVefrkycWVESJgSj5TabJWeTOc8CpF8Q9BCdxhKnm20QBNt9moTXzhyTa1jghQFrK3KsGyNBKYVn9UMZThrfvJSETkCboInkxndWSEYNTOz5tTNDlDDFBCn0X4ro1vMqCs/whhGKSK3aRli9IsU4r7Ngopo1zlEJnQkpi6woGRXaJN4K1ZihIECqJaIy6846xwxNVzyKS+idJhFPN0Ll7E2Jeh6rNY12ecEwOMsJosXS9PN5IYzzTsIY5SE2M7zHXIdVIim5sptHgQqlHjrWq7qplUA1Zc1E8cI4s9lpyVbKORJKSS5dEwIPMYbJwvFZTneNyKqTdGBgvb1e666zxnLWzEBZtgQo2xDDMsm4JYdKBKfNRcoga7H6XeejUug+sbulkA6rbTHXObZaLlXpIVr+rjMXugaLmrc2bam6TWh7JlTSUDM0a0sVJI07o/7AmYyjiK/yvakNM7HKW0hUVFyLPswrLexQWrRHvdNT0z/dfc6ISDgccFOVKwFVDEwokeioEo8ktKrsUFCKSEZtKdbt8s87m1Pj5OxxysgEndxlFZoVIAc7lE7QKjov+aIzrY7HfLzHl53IxwRjOFoAeWzWfmOH0qK4zpkdP+18Wivr1A2TXZphSItuw6Ve58A+lrVIrHrXWwBb0/Ap52vCVJiahoiIRfZLWBI1rJZUwCyxnu/Gl509ryb6RKt1OQSWsRHbwbgu7bQ/0i+cw8jzre2ogkHOc314tqvbr5u9hs673H+Aj8Y7Kb/nHALzJC02avny1n1gTNQ+DmGr6fneJKcRlqreVlBQ9KFZ18QY96+yOYzazgeo7SJT7AOpyrlSzkRUqyWMPIwrZSh0raYCNhrFWcojnheSZErMQaT4sIvj3UF/t0jUa6vQK7G7PGdUnxjmcw8bTJesug5gSRiGL6PMmnkX+uOuzjYB+80cm0rUiUoJvwRnV9enExwD5Py8xB02ng+pN7cMdYbhSxHM0PmNGlWzu2cBFuaGg8W4/8TW+IbLzcrvAKeJv8unm0JdrYqstq83y+O42hf7bJrvLsnNeZrXdb77wPYr6JLrrdJ3ZMd/iGGb++Hn1eGwP8TH6on7x7e72zN3fzyZPo+jPvVp0Vb//GZCWOrtX9/MeL4PLPVH1/lmsRhcWDyv+9SBUV8Glrp40er6edRSB6Mbk9BPS3177Wb82o41WPy8b4wt9bnXuFHXz/YgXxpjK0QznHeNR73GJ9U2HvUbPzfz8LNvOBeGT3+PLiwGj3qBht/vWuqoUb3X27e2+k8zyLdeddFWFz/W3YzXrzctXpoSuP+EetOoQ1tdf6Q6HA6Hw+FwOBwOh8PhcDgcDsf/k38BE4Ng0LUy6FIAAAAASUVORK5CYII="
+            alt="Image 3"
+            class="grid-img"
+          />
+          <h3>Tesco</h3>
+          <p>
+            This role is warehouse based with day shifts and night shifts
+            available, you will be filling shelves or helping customers,
+            assisting drivers or part of the warehouse team. PPE and training to
+            be provided, multiple locations across South England is available.
+            If you are interested in this role please contact Zion on
+            07123456789.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAACLCAMAAABmx5rNAAAAZlBMVEX/zADUBRH/1AD/0QDcUQ/jZg3/2QDoewvVFxDbTA/xpQjeWA7ldQzumArmeQz/zwDxoQjaRhDPABL7wQTkbQ38xQP3swbwnQnpggvtkwr4ugXqiQvXIxDXNBDkcQ3gYQ7bPw/zqwjHyVPVAAACd0lEQVR4nO3W2bKiMBAG4CQtqCyGHcQFff+XnAQlaRTm1BRzMVP1f3eNMd0kTUAIAAAAAAAAAAAAAAAAAAAAgP+LVsvIDyF/dYzng9h/9MZS+tPeOFmJdb9XVRUEp6ieqlFZsn9LShPXexe2Jnvnw2ZbMXSTy4pb9FoFXfprd5NMBYWLax0mPjrSD8l+KGVYKcXOnb3mfrgrj9CUkrrksiFK/fhbvakUdV4vRcp8HOJv/NprQc3B1XpRbM1k0WxaFt0U8jdsbuVvvIiU1mxPB5M796M7tWlZRJQabea0adumbk9uJW8WGZR931e+UtLKR3LYWIogKzQFvGSaSJVuE07Em0UeDpJ7EmVsDeuND/SrHtcQxc3G12n6hxKqWtvE4qx0z4rb1ixvquXPhaDALUOvab21q1mzmDb+C6Xw0yNVQtdmK0bS3vgUfHkITXf3qwz+fFXok9Afp4cbo835blppYk/4MGShqYVfmM05S7HSRqrLjzN5y45Neci9R2yapTvu3mJzjFEzRbs8JV3Gu2VNPfAU5+Ul000016p2pR2upaDIn+6RmVC7k6XIQ6F2y11ddGGZsRRZv7wwdNnFXELl4nxmu0pz4/4psceYb2pz7mhau4mB0iPPsbssrws9U+7cUL44XxGYPlKxi3P7Rpydv+a2Vmoxb/VZkvS5UkuanLykXzw9isPQ21eg/+1gjjH2tng/v/HiHjU1T2GzpGu13BOvE+Ony/Th8vpuqbpnObZ+GQcT2yxiP0zhfZxci6argg/DWWU8hZ12pRb+gWa/0RY/6d6txn4bJ+P/+xrBhtL3JQAAAAAAAAAAAAAAAAAAAIB/1y/WRyrtaBLcygAAAABJRU5ErkJggg=="
+            alt="Image 3"
+            class="grid-img"
+          />
+          <h3>DHL</h3>
+          <p>
+            This role is warehouse based with day shifts and night shifts
+            available, you will be dealing with handheld scanners sorting
+            parcels from a conveyor belt, assisting drivers or part of the
+            warehouse team. PPE and training to be provided, multiple locations
+            across South England is available. If you are interested in this
+            role please contact Terry on 07123456789.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <ul class="footer-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.151082276132!2d-0.12268278421674936!3d51.501008517456646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760550e8d603d1%3A0xb00c06d6a5a196a3!2sWestminster%20Bridge!5e0!3m2!1sen!2suk!4v1622719573057!5m2!1sen!2suk"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <h3 class="map-text">
+        Located in Central London, operating across England
+      </h3>
+    </footer>
+  </body>
+</html>
