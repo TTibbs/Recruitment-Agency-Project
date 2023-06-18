@@ -57,16 +57,16 @@ header {
 }
 
 .info-container {
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 5px;
 }
 
 .info-title {
   font-size: 2em;
   color: var(--primary-text);
+  padding-bottom: .5rem;
 }
 
 hr {
@@ -81,6 +81,7 @@ hr {
 .info-text {
   font-size: 1.2em;
   color: var(--secondary-text);
+  padding: .5rem 0 1rem 0;
 }
 
 #home img {
@@ -107,6 +108,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: .5rem 0 .5rem 0;
 }
 
 #details-text {
